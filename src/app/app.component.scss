@@ -1,0 +1,250 @@
+.header_menu{
+    background: #0a0d1400;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    transition: .10s;
+}
+header.abajo{
+    background: #0A0D14;
+    height: 75px;
+    padding: 5px 10px;
+    transition: .5s;
+}
+.nav_cafe{
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo{
+    height: 70px; 
+}
+.nav_menu{
+    display: flex;
+    margin: 0;
+    list-style: none;
+}
+.nav_administracion{
+    display: flex;
+    margin: 0;
+    list-style: none;
+}
+.nav_links{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #D66B1D;
+    text-decoration: none;
+}
+
+.administracion{
+    display: flex;
+}
+
+/* los estilos de los botones del nav, su estilo y sus efectos */
+.nav_link_btn{
+    background: #D66B1D;
+    color: #0A0D14;
+    text-decoration: none;
+    padding: 0 10px;
+    
+    mix-blend-mode: normal;
+    border: 1px solid #000000;
+    text-transform: initial;
+    border-radius: 50px;
+    border-radius:black 30%;
+    margin: 24px;
+    transition: .5s;
+    
+}
+
+.nav_link_btn:hover{
+    background: #0a0d1400;
+    color: #D66B1D;
+    border: 1px solid #D66B1D;
+    
+}
+.nav_link_estilo {
+    color: #D66B1D;
+    text-transform: uppercase;
+    text-decoration: none;
+   
+    
+    
+    position: relative;
+}
+.nav_link_estilo:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #D66B1D;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.nav_link_estilo:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+/*los estilos para que el nav sea responsivo */
+.nav_toggle{
+
+    color: white;
+    background: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+}
+
+@media (max-width: 768px){
+    .header_menu{
+        background: #0a0d14;
+        height: 70px;
+        
+    
+    }
+    header.abajo{
+        background: #0A0D14;
+        height: 70px;
+        padding:0 15px;
+        transition: .5s;
+    }
+
+    .nav_cafe{
+        display: flex;
+        justify-content: space-between;
+        overflow-y: auto;
+    }
+    .logo{
+        height: 70px; 
+    }
+    .nav_menu{
+        flex-direction: column;
+        margin: 0;
+        list-style: none;
+        background: #282c35;
+        display: flex;
+        position: fixed;
+        top: 70px;
+        width: 100%;
+       text-align: center;
+       height: calc(100% - 70px);
+       padding: 0;
+       left: 100%;
+       transition: .2s;
+    }
+    .nav_administracion{
+        flex-direction: column;
+        margin: 0;
+        list-style: none;
+        background: #282c35;
+        padding: 0;
+        position: fixed;
+        top: 430px;
+        width: 100%;
+        text-align: center;
+        left: 100%;
+        transition: .2s;
+    }
+    /* estilo para que el logo se quede en la esquina al ser resposive */
+    #logo{
+        order: -1;
+    }
+    .nav_links{
+        font-size: 18px;
+        margin: 0;
+        
+        line-height: 90px;
+        text-transform: uppercase;
+        color: #D66B1D;
+        text-decoration: none;
+        transition: .5s;
+    }
+    .nav_link_estilo {
+        color: #D66B1D;
+        text-transform: uppercase;
+        text-decoration: none;
+       
+        
+        
+        position: relative;
+    }
+    .nav_links:hover {
+        background: #D66B1D;
+       
+        .nav_link_estilo{
+            color: #282c35;
+        }
+    }
+    .nav_link_estilo:after {    
+        
+        
+        
+        display:none;
+        
+    }
+    /*boton de iniciar sesion responsive */
+    .nav_resposive_btn{
+        background: #D66B1D;
+        color: #0A0D14;
+        text-decoration: none;
+        padding: 0 ;
+        width: 100%;
+        mix-blend-mode: normal;
+       
+        text-transform: initial;
+       
+        
+        margin:0;
+        transition: .5s;
+        .nav_link_btn{
+            border: none;
+            border-radius: none;
+        }
+    }
+    
+    .nav_resposive_btn:hover{
+        background: #282c35;
+        color: #D66B1D;
+        .nav_link_btn{
+            border: none;
+            border-radius: none;
+            background: #282c35;
+            color: #D66B1D;
+        }
+        
+    }
+    /* estilo para que se muestre el menu hamburguesa */
+    .nav_toggle{
+ 
+        color: #D66B1D;
+        background: none;
+        font-size: 30px;
+        padding: 0 20px;
+        line-height: 60px;
+       display: block;
+        border: none;
+        
+    }
+   
+    .nav_menu_visible{
+        left: 0;
+        transition: .2s;
+    }
+    .administracion{
+        display: flex;
+    }
+}
+
+@media screen and (max-height: 300px) {
+      ul {
+          margin-top: 40px;
+      }
+}
+  
