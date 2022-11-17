@@ -1,0 +1,41 @@
+.seccioon{
+    background: #0A0D14;
+}
+.imagen{
+    width: 75%;
+    height:  606px;
+}
+
+.texto{
+    position: absolute;
+    width: 451px;
+    height: 203px;
+    left: 840px;
+    top: 230px;
+    
+    margin: 5px;
+    h5{
+        font-family: 'Cookie';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 70px;
+        line-height: 78px;
+       
+        text-align: center;
+
+        color: #D66B1D;
+    }
+    p{
+        font-family: 'Fjalla One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 60px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+}
