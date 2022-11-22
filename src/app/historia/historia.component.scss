@@ -1,0 +1,34 @@
+.row{
+    background:#262729 ;
+}
+.imagen{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+.col-6{
+    
+    padding: 0;
+}
+.historia{
+    width: 500px;
+    text-align:start;
+    h3{
+        color: #fff;
+    }
+    p{
+        color: #fff;
+        padding-right:0;
+    }
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 310px;
+}
+.logo_fecha{
+    width: 250px;
+    position: absolute;
+    
+}

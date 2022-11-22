@@ -11,7 +11,7 @@ export class AppComponent  implements OnInit{
     titulo1:string="comiditas"
     eslogan1:string="Disfruto las mañanas con cafe"
     imagen1:string='../assets/medialunas.jpg'
-
+  //https://www.cucinare.tv/wp-content/uploads/2021/09/D%C3%ADa-Internacional-del-Caf%C3%A9-2021.jpg
     titulo2:string="Cafes"
     eslogan2:string="La mejor preparacion de cafes estan aca"
     imagen2:string='../assets/maquinas-para-cafeteria.png'
