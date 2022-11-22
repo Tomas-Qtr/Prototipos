@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-seccion',
@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SeccionComponent implements OnInit {
 
+  @Input() tiuloSeccion:string | undefined
+  @Input() esloganSeccion:string | undefined
+  @Input() imagenSeccion:string | undefined
   constructor() { }
 
   ngOnInit(): void {

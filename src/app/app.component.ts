@@ -8,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent  implements OnInit{
   title = 'protipos';
 
-  
+    titulo1:string="comiditas"
+    eslogan1:string="Disfruto las mañanas con cafe"
+    imagen1:string='../assets/medialunas.jpg'
+
+    titulo2:string="cofgdgs"
+    eslogan2:string="Disfruto dfss con cafe"
+    imagen2:string='.sdf'
 
   constructor() {}
 
