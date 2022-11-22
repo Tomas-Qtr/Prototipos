@@ -12,9 +12,9 @@ export class AppComponent  implements OnInit{
     eslogan1:string="Disfruto las mañanas con cafe"
     imagen1:string='../assets/medialunas.jpg'
 
-    titulo2:string="cofgdgs"
-    eslogan2:string="Disfruto dfss con cafe"
-    imagen2:string='.sdf'
+    titulo2:string="Cafes"
+    eslogan2:string="La mejor preparacion de cafes estan aca"
+    imagen2:string='../assets/maquinas-para-cafeteria.png'
 
   constructor() {}
 
