@@ -22,13 +22,106 @@
     }
 }
 .centrar{
+    
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 310px;
+    align-self: center;
+    align-items:center;
+    
+}
+.translate-middle {
+    transform: translate(-50%,-120%)!important;
 }
 .logo_fecha{
     width: 250px;
     position: absolute;
+    bottom: 50px;
     
+    margin: 0 5px;
+}
+
+/* -------------------------- Agregamos los estilos responsivos -------------------------- */
+@media screen and (max-width:1188px) {
+  
+    .historia{
+        p{
+            padding-right: 50px;
+        }
+    }
+}
+@media screen and (max-width:1050px) {
+  
+    .historia{
+        p{
+            padding-right: 80px;
+        }
+    }
+}
+
+@media screen and (max-width:815px) {
+  
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-6{
+        width: 100%;
+    }
+    .historia{
+        width: 500px;
+        text-align:center;
+        margin: 55px 0;
+        h3{
+            font-size: 3em;
+            color: #fff;
+        }
+        p{
+            color: #fff;
+            padding-right:0;
+        }
+    }
+    .logo_fecha{
+        width: 180px;
+        position: absolute;
+        margin: 0 5px;
+        
+        
+    }
+    .translate-middle {
+        transform: translate(-50%,-270%)!important;
+    }
+    .centrar{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        
+    }
+}
+
+
+@media screen and (max-width:413px) {
+    
+    .historia{
+        padding: 15px;
+        h3{
+            font-size: 3em;
+            color: #fff;
+        }
+        p{
+            color: #fff;
+           padding: 5px;
+        }
+    }
+    .logo_fecha{
+        width: 180px;
+        position: absolute;
+        margin: 0 25px;
+        
+        
+    }
+    .translate-middle {
+        transform: translate(-50%,-300%)!important;
+    }
 }
